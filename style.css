@@ -1,0 +1,162 @@
+  bacg
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+*, input,button{
+font-family:arial;
+}
+
+body{
+    display:flex ;
+    flex-direction:colum;
+    background-image:url(https://img.freepik.com/fotos-premium/plano-de-fundo-branco-textura-de-papel-acima_60487-2344.jpg);
+}
+img{
+    width: 25%;
+    height:40% ;
+}
+
+img{
+    width: 600px;
+position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-40%, -40%);  
+}
+
+.menu{
+    height: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-section{
+    display: flex;
+    align-items: center;
+}
+
+.menu-section.left .menu-icon{
+    padding: 12px 16px;
+}
+
+.menu-link{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: aqua;
+    padding: 12px 8px;
+}
+
+.menu-link.active{
+    color: blueviolet;
+    border-bottom: 2px solid rgb(63, 63, 226)
+}
+
+.menu-link:not(.active){
+    margin-bottom: 2px;
+}
+
+.menu-section.right{
+    margin-right: 4px;
+
+}
+
+.menu-section.right .menu-icon{
+    padding: 12px;
+}
+
+.menu-profile{
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.menu-avatar-frame{
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu-avatar{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+/* logo */
+
+.content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 55px 8px 0;
+    align-items: center;
+
+}
+
+.content-logo{
+    width: 100%;
+    max-width: 300px;
+    
+}
+
+.content-search{
+    margin-top: 20px;
+    width: 100%;
+    max-width: 730px;
+    padding: 7px 10px 7px 20px;
+    font-size: 18px;
+    color: chartreuse;
+    background: transparent;
+    border-radius: 25px;
+    border: 1px solid rgb(192, 183, 183);
+}
+
+.content-offer{
+    margin-top: 24px;
+    font-size: 14px;
+    padding: 6px 12px;
+}
+
+.content-offer a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+/* footer */
+
+.footer{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(235, 226, 226);
+}
+
+.footer-section:not(:first-child){
+    border-top: 1px solid;
+}
+
+.footer-localition{
+    font-size: 15px;
+    color: black;
+    padding: 10px 12px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color:rgb(68, 68, 68);
+    padding: 10px;
+}
+
+.footer-links a:not(:first-child){
+    margin-left: 30px;
+}
